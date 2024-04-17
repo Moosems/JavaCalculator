@@ -1,7 +1,7 @@
 /*
  * Calculator
  * 
- * Version 1.0
+ * Version 1.0.1
  *
  * 04/17/2024
  * 
@@ -63,6 +63,11 @@ class Calculator{
             }
         };
 
-        return new CustomTuple(firstNum, secondNum, outputNum, mathematicalOutputType);
+        return new CustomTuple(
+            firstNum,
+            secondNum,
+            outputNum,
+            mathematicalOutputType
+        );
     }
 }

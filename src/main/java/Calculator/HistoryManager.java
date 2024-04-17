@@ -1,7 +1,7 @@
 /*
  * HistoryManager
  * 
- * Version 1.0
+ * Version 1.0.1
  *
  * 04/17/2024
  * 
@@ -24,8 +24,13 @@ class HistoryManager {
         if (osName.contains("win")) {
             userDataDir = System.getenv("APPDATA");
         } else if (osName.contains("mac")) {
-            userDataDir = System.getProperty("user.home") + "/Library/Application Support";
-        } else if (osName.contains("nix") || osName.contains("nux") || osName.contains("aix")) {
+            userDataDir = System.getProperty("user.home")
+            	+ "/Library/Application Support";
+        } else if (
+        	osName.contains("nix")
+        	|| osName.contains("nux")
+        	|| osName.contains("aix")
+        ){
             userDataDir = System.getProperty("user.home") + "/.local/share";
         } else if (osName.contains("sunos")) {
             userDataDir = System.getProperty("user.home");
